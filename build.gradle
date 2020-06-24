@@ -10,7 +10,38 @@ repositories {
 }
 
 dependencies {
-//    compile group: 'org.jetbrains', name: 'annotations', version: '16.0.1'
-
 
 }
+
+sourceSets {
+    main{
+        java{
+            srcDir 'src/java'
+        }
+    }
+
+//    app{
+//        java {
+//            srcDir 'app/src'
+//        }
+//    }
+//    service{
+//        java{
+//            srcDir 'service/src'
+//        }
+//    }
+}
+
+//java {
+//    modularity.inferModulePath = true
+//
+//    tasks.withType(JavaCompile) {
+//        doFirst {
+//            options.compilerArgs = [
+//                    '--module-path', classpath.asPath,
+//            ]
+//            classpath = files()
+//        }
+//    }
+//}
+

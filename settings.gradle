@@ -1,2 +1,4 @@
 rootProject.name = 'Java14_gradle'
+include 'app'
+include 'service'
 
