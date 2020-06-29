@@ -1,0 +1,51 @@
+
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'java-library'
+}
+
+ext.moduleName = "com.app"
+
+java {
+    modularity.inferModulePath = true
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    System.out.println("!!!!!$rootProject/lib")
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    compile project(":service")
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+//model {
+//    components {
+//        main(JvmLibrarySpec) {
+//            sources {
+//                java {
+//                    dependencies {
+//                        //compile fileTree(dir: 'lib', include: ['*.jar'])
+//                    }
+//                    //srcDir 'app/src'
+//                }
+//            }
+////            api {
+////                exports 'com.app'
+////            }
+//        }
+//    }
+//}
+
