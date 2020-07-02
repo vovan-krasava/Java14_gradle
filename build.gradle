@@ -1,5 +1,8 @@
 plugins {
     id 'java'
+    id 'idea'
+    id 'jvm-component'
+    id 'java-lang'
 }
 
 group 'org.example'
@@ -10,7 +13,7 @@ repositories {
 }
 
 dependencies {
-
+    //compile fileTree(dir: 'lib', include: ['*.jar'])
 }
 
 sourceSets {
