@@ -5,3 +5,8 @@ syntax/HelperNPE.java
  syntax.Zoo
 Main.java
  Main
+syntax/MultilineTextBlocks.java
+ syntax.MultilineTextBlocks
+syntax/NewSwitch.java
+ syntax.NewSwitch
+ syntax.NewSwitch$1

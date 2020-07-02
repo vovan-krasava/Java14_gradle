@@ -3,11 +3,11 @@ package syntax;
 public class MultilineTextBlocks {
 
         public static void demo() {
-            System.out.println(jdk8());
-            System.out.println(jdk14preview());
+            System.out.println(java8());
+            System.out.println(java14preview());
         }
 
-        private static String jdk8() {
+        private static String java8() {
             return "<html>\n" +
                     "    <body>\n" +
                     "        <p>TEST</p>\n" +
@@ -15,7 +15,7 @@ public class MultilineTextBlocks {
                     "</html>\n";
         }
 
-        private static String jdk14preview() {
+        private static String java14preview() {
             return """
               <html>
                   <body>
